@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login | Virar Calisthenics Academy</title>
+  <meta name="description" content="Secure admin login for Virar Calisthenics Academy.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <main class="login-shell">
+    <section class="login-hero" aria-label="Admin login">
+      <a class="brand" href="index.html" aria-label="Virar Calisthenics home">
+        <span class="brand-mark">V</span>
+        <span>
+          <strong>Virar</strong>
+          <small>Admin Access</small>
+        </span>
+      </a>
+
+      <div class="login-copy">
+        <p class="eyebrow">Coach Control Room</p>
+        <h1>Admin Login</h1>
+        <p>Manage trial leads, follow-ups, and academy registrations from one secure dashboard.</p>
+      </div>
+
+      <form class="login-card" id="loginForm">
+        <h2>Sign In</h2>
+        <label>
+          <span>Username</span>
+          <input type="text" name="username" autocomplete="username" placeholder="admin" required>
+        </label>
+        <label>
+          <span>Password</span>
+          <div class="password-wrap">
+            <input type="password" name="password" id="passwordInput" autocomplete="current-password" placeholder="Enter password" required>
+            <button type="button" id="togglePassword">Show</button>
+          </div>
+        </label>
+        <button class="login-btn" type="submit">Login</button>
+        <p class="login-message" id="loginMessage" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="login.js"></script>
+</body>
+</html>

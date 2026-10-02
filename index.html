@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virar Calisthenics Training Academy | Virar</title>
+  <meta name="description" content="Premium calisthenics training academy in Virar for strength, mobility, skills, and body transformation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Virar Calisthenics home">
+        <span class="brand-mark">V</span>
+        <span>
+          <strong>Virar</strong>
+          <small>Calisthenics Academy</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#coach">Coach</a>
+        <a href="#free-trial">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-dark" aria-label="Hero section">
+      <!-- Replace this image URL with your academy hero image or video poster. -->
+      <!-- For a video hero, replace the .hero-media img with a muted autoplay video element. -->
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1598971639058-fab3c3109a00?auto=format&fit=crop&w=1800&q=85" alt="Calisthenics athlete training outdoors">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Premium Bodyweight Training Academy</p>
+        <h1>Train Calisthenics in Virar</h1>
+        <p class="hero-subtitle">Build Strength, Master Skills, Transform Your Body</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#free-trial">Book Free Trial</a>
+          <a class="btn btn-outline" href="#free-trial">Contact Coach</a>
+        </div>
+      </div>
+      <div class="hero-stats" aria-label="Training highlights">
+        <div>
+          <strong>6+</strong>
+          <span>Skill Tracks</span>
+        </div>
+        <div>
+          <strong>1:1</strong>
+          <span>Guidance</span>
+        </div>
+        <div>
+          <strong>Open</strong>
+          <span>Terrace Setup</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trial-section" id="free-trial">
+      <div class="container trial-layout">
+        <div class="section-copy reveal">
+          <p class="eyebrow">Start Strong</p>
+          <h2>Book Your Free Trial Session</h2>
+          <p>Experience structured calisthenics coaching, skill progressions, and a motivating open-air environment before you join.</p>
+        </div>
+
+        <form class="form-card reveal" id="trialForm">
+          <h3>Free Trial</h3>
+          <label>
+            <span>Full Name</span>
+            <input type="text" name="name" placeholder="Your full name" required>
+          </label>
+          <label>
+            <span>Age</span>
+            <input type="number" name="age" placeholder="Your age" min="8" max="80" required>
+          </label>
+          <label>
+            <span>Gender</span>
+            <select name="gender" required>
+              <option value="">Select gender</option>
+              <option>Female</option>
+              <option>Male</option>
+              <option>Other</option>
+              <option>Prefer not to say</option>
+            </select>
+          </label>
+          <label>
+            <span>Contact Number</span>
+            <input type="tel" name="phone" placeholder="+91 98765 43210" required>
+          </label>
+          <label>
+            <span>Fitness Goal <em>(Optional)</em></span>
+            <textarea name="goal" rows="4" placeholder="Strength, fat loss, handstand, muscle-up..."></textarea>
+          </label>
+          <button class="btn btn-primary btn-full" type="submit">Submit Trial Request</button>
+          <p class="form-message" id="trialMessage" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container split">
+        <div class="section-copy reveal">
+          <p class="eyebrow">About Calisthenics</p>
+          <h2>Build real-world strength with complete body control.</h2>
+          <p>Calisthenics uses your bodyweight to develop strength, mobility, flexibility, balance, coordination, and advanced skills. It is beginner-friendly, scalable, and powerful for long-term athletic transformation.</p>
+        </div>
+        <div class="benefit-grid reveal">
+          <article><span>01</span><h3>Strength</h3><p>Progress from basics to controlled, powerful movements.</p></article>
+          <article><span>02</span><h3>Mobility</h3><p>Improve joints, posture, and movement quality.</p></article>
+          <article><span>03</span><h3>Flexibility</h3><p>Train active range for smoother skills and safer workouts.</p></article>
+          <article><span>04</span><h3>Balance</h3><p>Develop control for holds, inversions, and transitions.</p></article>
+          <article><span>05</span><h3>Skill Development</h3><p>Learn handstands, levers, muscle-ups, and freestyle flow.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Why Choose Us</p>
+          <h2>Training designed for progress, confidence, and consistency.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal"><h3>Strength Building</h3><p>Structured progressions for upper body, core, legs, and grip.</p></article>
+          <article class="feature-card reveal"><h3>Fat Loss</h3><p>High-output circuits that improve conditioning and body composition.</p></article>
+          <article class="feature-card reveal"><h3>Mobility & Flexibility</h3><p>Dedicated movement prep and recovery-based flexibility work.</p></article>
+          <article class="feature-card reveal"><h3>Skill Training</h3><p>Clear steps for push, pull, balance, lever, and freestyle skills.</p></article>
+          <article class="feature-card reveal"><h3>Open Terrace Environment</h3><p>Train outdoors with fresh air and an energizing Virar rooftop vibe.</p></article>
+          <article class="feature-card reveal"><h3>Personal Guidance</h3><p>Coach-led feedback keeps your technique clean and your plan realistic.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Skills We Teach</p>
+          <h2>From first rep to advanced bodyweight mastery.</h2>
+        </div>
+        <div class="skill-grid reveal">
+          <span>Push-ups</span>
+          <span>Pull-ups</span>
+          <span>Dips</span>
+          <span>Handstand</span>
+          <span>Front Lever</span>
+          <span>Back Lever</span>
+          <span>Muscle-up</span>
+          <span>Freestyle</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="environment">
+      <!-- Replace this background image with your terrace training photo. -->
+      <img src="https://images.unsplash.com/photo-1571019613576-2b22c76fd955?auto=format&fit=crop&w=1800&q=85" alt="Outdoor functional training space">
+      <div class="environment-panel reveal">
+        <p class="eyebrow">Training Environment</p>
+        <h2>Open terrace training with space to move.</h2>
+        <p>Train in fresh air with a spacious setup, focused coaching, and a positive community that makes every session feel sharp, energetic, and personal.</p>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Gallery</p>
+          <h2>Inside the training experience.</h2>
+        </div>
+        <div class="gallery-grid">
+          <!-- Replace gallery image URLs with real academy photos. -->
+          <button class="gallery-item reveal" type="button" data-full="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1400&q=85">
+            <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=700&q=80" alt="Strength training session">
+          </button>
+          <button class="gallery-item reveal" type="button" data-full="https://images.unsplash.com/photo-1549476464-37392f717541?auto=format&fit=crop&w=1400&q=85">
+            <img src="https://images.unsplash.com/photo-1549476464-37392f717541?auto=format&fit=crop&w=700&q=80" alt="Athlete doing bodyweight exercise">
+          </button>
+          <button class="gallery-item reveal" type="button" data-full="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1400&q=85">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=700&q=80" alt="Group fitness training">
+          </button>
+          <button class="gallery-item reveal" type="button" data-full="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=1400&q=85">
+            <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=700&q=80" alt="Functional workout equipment">
+          </button>
+          <button class="gallery-item reveal" type="button" data-full="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1400&q=85">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=700&q=80" alt="Gym training environment">
+          </button>
+          <button class="gallery-item reveal" type="button" data-full="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?auto=format&fit=crop&w=1400&q=85">
+            <img src="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?auto=format&fit=crop&w=700&q=80" alt="Athlete stretching outdoors">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="coach">
+      <div class="container coach-card reveal">
+        <!-- Replace this coach image URL with the real coach photo. -->
+        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=900&q=85" alt="Calisthenics coach portrait">
+        <div>
+          <!-- Update coach name, experience, achievements, contact details, and Instagram below. -->
+          <p class="eyebrow">Meet The Coach</p>
+          <h2>Coach Name Placeholder</h2>
+          <p>Certified calisthenics and bodyweight training coach focused on safe progressions, strong fundamentals, and practical skill mastery for beginners and intermediate athletes.</p>
+          <div class="coach-details">
+            <p><strong>Experience:</strong> 5+ years coaching bodyweight strength and mobility.</p>
+            <p><strong>Achievements:</strong> Handstand specialist, muscle-up progression coach, community workshop lead.</p>
+            <p><strong>Contact:</strong> +91 90000 00000</p>
+            <p><strong>Instagram:</strong> @virar.calisthenics</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Testimonials</p>
+          <h2>Students who started with basics and stayed for progress.</h2>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card reveal"><p>"I joined as a complete beginner. Within weeks, my pull-ups, core strength, and confidence improved."</p><strong>Rohan S.</strong></article>
+          <article class="testimonial-card reveal"><p>"The terrace sessions feel energetic, personal, and disciplined. The coaching is very clear."</p><strong>Aditi P.</strong></article>
+          <article class="testimonial-card reveal"><p>"I lost fat, learned handstand basics, and finally understood how to train with proper form."</p><strong>Sameer K.</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container faq-wrap">
+        <div class="section-copy reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Beginner-friendly answers.</h2>
+          <p>You do not need to be strong before joining. The program scales from basics to advanced skills.</p>
+        </div>
+        <div class="faq-list reveal">
+          <button class="faq-item" type="button">
+            <span>Can beginners join calisthenics training?</span>
+            <p>Yes. Sessions start with fundamentals, mobility, and simple progressions based on your current level.</p>
+          </button>
+          <button class="faq-item" type="button">
+            <span>Do I need gym experience?</span>
+            <p>No. You can begin with bodyweight basics and gradually move toward strength and skills.</p>
+          </button>
+          <button class="faq-item" type="button">
+            <span>What should I bring?</span>
+            <p>Comfortable training clothes, water, a towel, and a positive mindset are enough for your first session.</p>
+          </button>
+          <button class="faq-item" type="button">
+            <span>Will calisthenics help with fat loss?</span>
+            <p>Yes. Combined with consistency and nutrition, calisthenics improves strength, conditioning, and body composition.</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#top">
+          <span class="brand-mark">V</span>
+          <span>
+            <strong>Virar</strong>
+            <small>Calisthenics Academy</small>
+          </span>
+        </a>
+        <p>Premium calisthenics coaching in Virar.</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <!-- Update phone and WhatsApp number placeholders here. -->
+        <a href="tel:+919000000000">+91 90000 00000</a>
+        <a href="https://wa.me/919000000000" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <div>
+        <h3>Social</h3>
+        <!-- Update Instagram and location links here. -->
+        <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        <a href="#" target="_blank" rel="noopener">Location: Virar, Maharashtra</a>
+      </div>
+    </div>
+    <p class="copyright">Copyright <span id="year"></span> Virar Calisthenics Training Academy. All rights reserved.</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close gallery preview">&times;</button>
+    <img src="" alt="Expanded gallery preview">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

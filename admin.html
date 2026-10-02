@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Virar Calisthenics Academy</title>
+  <meta name="description" content="Admin dashboard for viewing and updating Calisthenics Academy free trial leads.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <header class="admin-header">
+    <nav class="admin-nav" aria-label="Admin navigation">
+      <a class="brand" href="index.html" aria-label="Virar Calisthenics home">
+        <span class="brand-mark">V</span>
+        <span>
+          <strong>Virar</strong>
+          <small>Admin Dashboard</small>
+        </span>
+      </a>
+      <div class="admin-nav-actions">
+        <button class="change-password-btn" type="button" id="openChangePassword">Change Password</button>
+        <a class="home-link" href="index.html">View Website</a>
+        <button class="logout-btn" type="button" id="logoutButton">Logout</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="admin-main">
+    <section class="dashboard-hero">
+      <div>
+        <p class="eyebrow" id="welcomeText">Welcome Admin</p>
+        <h1>Free Trial Leads</h1>
+        <p>Review every trial request submitted through the Calisthenics Academy website. Newest registrations appear first.</p>
+      </div>
+      <div class="stat-card" aria-label="Total leads">
+        <span id="leadCount">0</span>
+        <small>Total Leads</small>
+      </div>
+    </section>
+    
+
+    <section class="table-section" aria-label="Registered leads table">
+      <div class="table-toolbar">
+        <div>
+          <h2>Registered Students</h2>
+          <p id="statusText">Loading leads...</p>
+        </div>
+        <div class="table-actions">
+          <label class="search-field">
+            <span>Search leads</span>
+            <input type="search" id="leadSearch" placeholder="Search by name or contact number">
+          </label>
+          <button class="refresh-btn" type="button" id="refreshLeads">Refresh</button>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Gender</th>
+              <th>Contact Number</th>
+              <th>Fitness Goal</th>
+              <th>Lead Status</th>
+              <th>Date Registered</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="leadsTableBody">
+            <tr>
+              <td colspan="9">Loading leads...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="changePasswordModal" hidden>
+    <div class="password-modal" role="dialog" aria-modal="true" aria-labelledby="changePasswordTitle">
+      <button class="modal-close" type="button" id="closeModal" aria-label="Close change password dialog">&times;</button>
+      <h2 id="changePasswordTitle">Change Password</h2>
+      <p class="modal-copy">Update the admin account password securely.</p>
+      <form id="changePasswordForm" class="password-form">
+        <label class="field-group">
+          <span>Current Password</span>
+          <input type="password" name="currentPassword" required>
+        </label>
+
+        <label class="field-group">
+          <span>New Password</span>
+          <input type="password" name="newPassword" minlength="8" required>
+        </label>
+
+        <label class="field-group">
+          <span>Confirm Password</span>
+          <input type="password" name="confirmPassword" minlength="8" required>
+        </label>
+
+        <p class="form-message" id="changePasswordMessage" role="status" aria-live="polite"></p>
+        <button class="submit-btn" type="submit">Update Password</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
